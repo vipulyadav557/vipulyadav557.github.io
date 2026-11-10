@@ -193,3 +193,60 @@
     transition: none;
   }
 }
+/* Professional Tools Grid */
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tool-card {
+  padding: 24px;
+  background: linear-gradient(145deg, #151f36, #0e1729);
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  transition: .3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--cyan);
+  box-shadow: 0 12px 30px rgba(87,214,232,.10);
+}
+
+.tool-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  background: #202c47;
+  border-radius: 12px;
+  font-size: 23px;
+}
+
+.tool-card h3 {
+  font: 600 1.08rem "Space Grotesk", sans-serif;
+  margin: 15px 0 8px;
+}
+
+.tool-card p {
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media(max-width:800px) {
+  .tool-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:520px) {
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+}
