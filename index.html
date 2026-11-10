@@ -3,86 +3,286 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The personal portfolio of Vipul Kumar Yadav, learning HTML, CSS, and JavaScript.">
+  <meta name="description" content="Vipul Kumar Yadav - Full Stack Developer, Python Programmer and Data Analytics Enthusiast.">
   <meta name="theme-color" content="#0b1020">
-  <title>Vipul Kumar Yadav | Portfolio</title>
+  <title>Vipul Kumar Yadav | Developer Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="index.html"><span class="brand-mark">V</span> Vipul<span class="accent">.</span></a>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a class="active" href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> WELCOME TO MY PORTFOLIO</p>
-        <h1>Hi, I'm <span class="gradient-text">Vipul Kumar Yadav.</span></h1>
-        <h2>Learning to build for the web.</h2>
-        <p class="hero-description">I'm exploring front-end development with HTML, CSS, and JavaScript. I enjoy turning ideas into clean, responsive web experiences.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="projects.html">Explore my work <span aria-hidden="true">↗</span></a>
-          <a class="button button-secondary" href="about.html">More about me</a>
-        </div>
-        <div class="hero-meta"><span>📍 India</span><span>✦ Curious learner</span><span>⌘ Front-end</span></div>
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">V</span>
+      Vipul<span class="accent">.</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero container">
+
+    <div class="hero-copy">
+
+      <p class="eyebrow">
+        <span class="status-dot"></span>
+        WELCOME TO MY PORTFOLIO
+      </p>
+
+      <h1>
+        Hi, I'm <span class="gradient-text">Vipul Kumar Yadav.</span>
+      </h1>
+
+      <h2 class="role-heading">
+        I'm a <span id="typing-role" class="gradient-text">Data Analyst</span><span class="typing-cursor">|</span>
+      </h2>
+
+      <p class="hero-description">
+        I'm passionate about technology, programming,
+        data analytics and building modern digital
+        experiences. I work with Python, SQL, React,
+        Node.js and modern web technologies to turn
+        ideas into useful solutions.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="projects.html">
+          Explore My Work <span aria-hidden="true">↗</span>
+        </a>
+
+        <a class="button button-secondary" href="about.html">
+          More About Me
+        </a>
       </div>
-      <div class="hero-art" aria-label="Decorative code illustration">
-        <img src="./vipul.jpg.jpg" alt="Vipul Kumar Yadav" style="width:180px;height:180px;object-fit:cover;border-radius:50%;display:block;margin:0 auto 20px;">
-        <div class="glow"></div>
-        <div class="code-window">
-          <div class="window-top"><span></span><span></span><span></span><small>hello-world.js</small></div>
-          <pre><code><i>const</i> developer = {
-  name: <b>"Vipul"</b>,
-  skills: [
-    <em>"HTML"</em>,
-    <em>"CSS"</em>,
-    <em>"JavaScript"</em>
+
+      <div class="hero-meta">
+        <span>📍 India</span>
+        <span>✦ Technology Enthusiast</span>
+        <span>⌘ Developer</span>
+      </div>
+
+    </div>
+
+    <!-- PROFILE AND CODE SECTION -->
+    <div class="hero-art" aria-label="Developer profile">
+
+      <div class="profile-glow"></div>
+
+      <img
+        class="profile-photo"
+        src="./vipul.jpg.jpg"
+        alt="Vipul Kumar Yadav"
+      >
+
+      <div class="code-window">
+
+        <div class="window-top">
+          <span></span>
+          <span></span>
+          <span></span>
+          <small>developer.py</small>
+        </div>
+
+        <pre><code><i>developer</i> = {
+  <b>"name"</b>: "Vipul Yadav",
+  <b>"skills"</b>: [
+    <em>"Python"</em>,
+    <em>"Pandas"</em>,
+    <em>"SQL"</em>,
+    <em>"React.js"</em>,
+    <em>"Node.js"</em>
   ],
-  mindset: <b>"Always learning"</b>
-};
+  <b>"mindset"</b>: "Always Learning"
+}
 
-<span class="code-purple">console</span>.log(
-  "Hello, world! 👋"
-);</code></pre>
-        </div>
-        <div class="float-chip chip-one"> &lt;/&gt; HTML</div>
-        <div class="float-chip chip-two">✦ CSS</div>
-        <div class="float-chip chip-three">JS</div>
+<span class="code-purple">print</span>(
+  "Hello, World! 👋"
+)</code></pre>
+
       </div>
-    </section>
 
-    <section class="section container">
-      <div class="section-heading">
-        <p class="eyebrow">WHAT I'M LEARNING</p>
-        <h2>My current <span class="gradient-text">toolkit</span></h2>
-        <p>Building a strong foundation, one concept at a time.</p>
-      </div>
-      <div class="skill-grid">
-        <article class="skill-card"><div class="skill-icon orange">5</div><h3>HTML5</h3><p>Creating meaningful, accessible page structure.</p></article>
-        <article class="skill-card"><div class="skill-icon blue">✳</div><h3>CSS3</h3><p>Styling responsive layouts and polished interfaces.</p></article>
-        <article class="skill-card"><div class="skill-icon yellow">JS</div><h3>JavaScript</h3><p>Adding interaction and useful behavior to websites.</p></article>
-      </div>
-    </section>
+      <div class="float-chip chip-one">&lt;/&gt; HTML</div>
+      <div class="float-chip chip-two">🐍 Python</div>
+      <div class="float-chip chip-three">✦ React</div>
 
-    <section class="cta container">
-      <div><p class="eyebrow">LET'S CONNECT</p><h2>Have an idea? Let's make it happen.</h2><p>I'm always happy to learn, collaborate, and explore new ideas.</p></div>
-      <a class="button button-primary" href="contact.html">Get in touch <span aria-hidden="true">↗</span></a>
-    </section>
-  </main>
+    </div>
 
-  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> Vipul Kumar Yadav</span><a href="https://github.com/vipulyadav557" target="_blank" rel="noreferrer">GitHub ↗</a></div></footer>
-  <script src="script.js"></script>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section container">
+
+    <div class="section-heading">
+      <p class="eyebrow">MY EXPERTISE</p>
+      <h2>My Technical <span class="gradient-text">Toolkit</span></h2>
+      <p>Technologies and tools I work with and continue to explore.</p>
+    </div>
+
+    <div class="skill-grid">
+
+      <article class="skill-card">
+        <div class="skill-icon orange">Py</div>
+        <h3>Python Programming</h3>
+        <p>Python programming and practical problem solving.</p>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon blue">DA</div>
+        <h3>Data Analytics</h3>
+        <p>Working with Pandas, NumPy, Matplotlib, SQL and Excel.</p>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon yellow">JS</div>
+        <h3>JavaScript</h3>
+        <p>Building interactive and dynamic web experiences.</p>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon blue">R</div>
+        <h3>React.js</h3>
+        <p>Creating modern and reusable user interfaces.</p>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon orange">N</div>
+        <h3>Node.js & MongoDB</h3>
+        <p>Backend development and database technologies.</p>
+      </article>
+
+      <article class="skill-card">
+        <div class="skill-icon yellow">A</div>
+        <h3>Android Development</h3>
+        <p>Android Studio knowledge and APK development.</p>
+      </article>
+
+    </div>
+
+  </section>
+
+  <!-- TECHNOLOGY SECTION -->
+  <section class="section container tech-section">
+
+    <div class="section-heading">
+      <p class="eyebrow">MY TECHNOLOGIES</p>
+      <h2>Tools I <span class="gradient-text">Use</span></h2>
+      <p>My growing technology stack.</p>
+    </div>
+
+    <div class="tech-list">
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>NumPy</span>
+      <span>Matplotlib</span>
+      <span>SQL</span>
+      <span>Excel</span>
+      <span>HTML5</span>
+      <span>CSS3</span>
+      <span>JavaScript</span>
+      <span>React.js</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+      <span>Android Studio</span>
+    </div>
+
+  </section>
+
+  <!-- CALL TO ACTION -->
+  <section class="cta container">
+
+    <div>
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Have an idea? Let's build something amazing.</h2>
+      <p>
+        I'm always interested in learning,
+        building projects and exploring new opportunities.
+      </p>
+    </div>
+
+    <a class="button button-primary" href="contact.html">
+      Get In Touch <span aria-hidden="true">↗</span>
+    </a>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Vipul Kumar Yadav</span>
+    <a href="https://github.com/vipulyadav557" target="_blank" rel="noreferrer">
+      GitHub ↗
+    </a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- TYPEWRITER ANIMATION -->
+<script>
+(function () {
+  const element = document.getElementById("typing-role");
+
+  if (!element) return;
+
+  const roles = [
+    "Data Analyst",
+    "Full Stack Developer",
+    "Python Programmer",
+    "React.js Developer",
+    "Responsive Web Developer",
+    "Android App Developer"
+  ];
+
+  let roleIndex = 0;
+  let charIndex = 0;
+  let deleting = false;
+
+  function typeWriter() {
+    const currentRole = roles[roleIndex];
+
+    if (deleting) {
+      charIndex--;
+    } else {
+      charIndex++;
+    }
+
+    element.textContent = currentRole.substring(0, charIndex);
+
+    let speed = deleting ? 45 : 85;
+
+    if (!deleting && charIndex === currentRole.length) {
+      deleting = true;
+      speed = 1600;
+    } else if (deleting && charIndex === 0) {
+      deleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+      speed = 350;
+    }
+
+    setTimeout(typeWriter, speed);
+  }
+
+  typeWriter();
+})();
+</script>
+
 </body>
 </html>
